@@ -50,10 +50,12 @@ sudo iptables -S
 Fail2ban will create a new chain for this jail.
 So you should see these new lines :
 
+```
 ...
 -N fail2ban-seafile
 ...
 -A fail2ban-seafile -j RETURN
+```
 
 ## Tests
 
