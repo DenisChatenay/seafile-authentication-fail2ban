@@ -26,7 +26,7 @@ Fail2ban will check this log file and will ban all failed authentications with a
 
 First copy the `jail.local` file to your folder `/etc/fail2ban`.
 
-**WARNING: this file may override some parameters from your `jail.conf` file)**
+***WARNING: this file may override some parameters from your `jail.conf` file***
 
 Edit `jail.local` with :
 * ports used by your seafile website (e.g. `http,https`) ;
