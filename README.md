@@ -1,7 +1,5 @@
 # seafile-authentication-fail2ban
 
-[TOC]
-
 ## Presentation
 
 #### What is seafile ?
