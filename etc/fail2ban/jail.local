@@ -1,0 +1,18 @@
+# All standard jails are in the file configuration located
+# /etc/fail2ban/jail.conf
+
+# Warning you may override any other parameter (e.g. banaction,
+# action, port, logpath, etc) in that section within jail.local
+
+# Change logpath with your file log used by seafile (e.g. seahub.log)
+# Also you can change the max retry var (3 attemps = 1 line written in the
+# seafile log)
+# So with this maxrety to 1, the user can try 3 times before his IP is banned
+
+[seafile]
+
+enabled  = true
+port     = http,https
+filter   = seafile-auth
+logpath  = /home/yourusername/logs/seahub.log
+maxretry = 1
