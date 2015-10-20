@@ -57,9 +57,8 @@ So you should see these new lines :
 
 ## Tests
 
-To do a simple test, go to your seafile webserver URL and try 3 authentications with a wrong password.
-
-Actually, when you have done that, you are banned from http,https ports in iptables, thanks to fail2ban.
+To do a simple test (but you have to be an administrator on your seafile server) go to your seafile webserver URL and try 3 authentications with a wrong password.
+Actually, when you have done that, you are banned from http and https ports in iptables, thanks to fail2ban.
 
 To check that :
 
@@ -84,6 +83,12 @@ on iptables :
 sudo iptables -S
 
 ...
--A fail2ban-seafile -s 154.45.208.138/32 -j REJECT --reject-with icmp-port-unreachable
+-A fail2ban-seafile -s 1.2.3.4/32 -j REJECT --reject-with icmp-port-unreachable
 ...
+```
+
+To unban your IP address, just execute this command :
+
+```
+sudo fail2ban-client set seafile unbanip 1.2.3.4
 ```
