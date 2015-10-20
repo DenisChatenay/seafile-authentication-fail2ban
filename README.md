@@ -58,6 +58,7 @@ So you should see these new lines :
 ## Tests
 
 To do a simple test (but you have to be an administrator on your seafile server) go to your seafile webserver URL and try 3 authentications with a wrong password.
+
 Actually, when you have done that, you are banned from http and https ports in iptables, thanks to fail2ban.
 
 To check that :
