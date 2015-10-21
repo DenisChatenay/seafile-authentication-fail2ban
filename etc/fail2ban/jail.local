@@ -15,4 +15,4 @@ enabled  = true
 port     = http,https
 filter   = seafile-auth
 logpath  = /home/yourusername/logs/seahub.log
-maxretry = 1
+maxretry = 3

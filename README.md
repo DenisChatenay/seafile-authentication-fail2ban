@@ -30,7 +30,8 @@ First copy the `jail.local` file to your folder `/etc/fail2ban`.
 
 Edit `jail.local` with :
 * ports used by your seafile website (e.g. `http,https`) ;
-* logpath (e.g. `/home/yourusername/logs/seahub.log`).
+* logpath (e.g. `/home/yourusername/logs/seahub.log`) ;
+* maxretry (default to 3 is equivalent to 9 real attemps in seafile, because one line is written every 3 failed authentications into seafile logs).
 
 #### Copy seafile-auth.conf file
 
